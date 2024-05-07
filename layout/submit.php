@@ -27,7 +27,7 @@ $stmt->bind_param("ssss", $firstname, $lastname, $email, $message);
 if ($stmt->execute()) {
       echo "<script>
       alert('Thank you for messaging! We will get back to you shortly!');
-      window.location.href='../src/index.html';
+      window.location.href='../index.html';
       </script>";
 } else {
       echo "Error: " . $stmt->error;
